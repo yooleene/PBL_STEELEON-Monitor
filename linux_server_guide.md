@@ -4,23 +4,23 @@
 
 ---
 
-## 1. SSH 접속
-
-```bash
-ssh root@210.114.22.173
-```
-
-root 비밀번호를 입력합니다.
-
----
-
-## 2. 코드 파일 업로드
+## 1. 코드 파일 업로드
 
 로컬 터미널에서 `monitor` 폴더가 있는 상위 폴더로 이동한 뒤 실행합니다.
 
 ```bash
 scp -r monitor root@210.114.22.173:/root/
 ```
+
+---
+
+## 2. SSH 접속(서버 접속)
+
+```bash
+ssh root@210.114.22.173
+```
+
+root 비밀번호를 입력합니다.
 
 ---
 
@@ -212,7 +212,16 @@ systemctl restart nginx
 scp -r monitor root@183.111.227.182:/root/
 ```
 
-서버에서 패키지 변경 반영 및 재시작:
+SSH 접속(서버 접속)
+
+```bash
+ssh root@210.114.22.173
+```
+
+root 비밀번호를 입력합니다.
+
+
+서버 터미널: 서버에서 패키지 변경 반영 및 재시작
 
 ```bash
 cd /root/monitor
@@ -234,6 +243,7 @@ deactivate
 
 ```bash
 chmod 600 /root/monitor/.env
+ls -l /root/monitor/.env
 ```
 
 ---
