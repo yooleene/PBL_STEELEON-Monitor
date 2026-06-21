@@ -209,7 +209,7 @@ systemctl restart nginx
 로컬 터미널:
 
 ```bash
-scp -r monitor root@183.111.227.182:/root/
+scp -r monitor root@210.114.22.173:/root/
 ```
 
 SSH 접속(서버 접속)
