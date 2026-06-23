@@ -54,6 +54,15 @@ SESSION_COOKIE_SECURE=true
 
 서버에서 실행합니다.
 
+pip, venv 설치: 설치 되어 있는지 확인하고 설치가 안되어 있다면 설치
+
+```bash
+sudo apt update
+sudo apt install python3-pip python3-venv
+```
+
+가상환경 생성 및 패키지 설치:
+
 ```bash
 cd /root/monitor
 python3 -m venv venv
