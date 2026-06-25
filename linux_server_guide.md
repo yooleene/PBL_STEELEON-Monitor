@@ -166,7 +166,7 @@ Nginx 설정 파일 생성:
 cat >/etc/nginx/sites-available/monitor_unified <<'EOF'
 server {
     listen 80;
-    server_name monitor.steeleon.kr;
+    server_name monitor.steeleon.ai;
 
     location / {
         proxy_pass http://127.0.0.1:5000;
