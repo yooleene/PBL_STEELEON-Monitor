@@ -71,11 +71,6 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Playwright를 사용한다면, Chromium과 리눅스 의존성을 설치합니다.
-
-```bash
-python3 -m playwright install --with-deps chromium
-```
 
 가상환경 종료:
 
@@ -105,6 +100,12 @@ http://127.0.0.1:5000
 
 테스트 실행 종료는 실행 중인 터미널에서 `Ctrl + C`를 누릅니다.
 
+
+다른 SSH 터미널에서 확인:
+
+```bash
+curl -I http://127.0.0.1:5000
+```
 ---
 
 ## 6. 운영 백그라운드 실행(systemd)
